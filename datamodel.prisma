@@ -1,0 +1,12 @@
+type User {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  name: String!
+}
+
+type Message {
+  id: ID! @id
+  message: String!
+  createdAt: DateTime! @createdAt
+  from: String!
+}

@@ -1,0 +1,11 @@
+endpoint: https://practice-server-01-9d90689c61.herokuapp.com/yoga-prisma-02/dev
+
+datamodel: datamodel.prisma
+
+generate:
+  - generator: javascript-client
+    output: ./generated/prisma-client/
+
+hooks:
+  post-deploy:
+    - prisma generate
